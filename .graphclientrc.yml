@@ -1,0 +1,6 @@
+# .graphclientrc.yml
+sources:
+  - name: uniswapv2
+    handler:
+      graphql:
+        endpoint: https://api.studio.thegraph.com/query/10139/uniswap-price/v0.0.4

@@ -1,6 +1,6 @@
 specVersion: 0.0.2
 schema:
-  file: ./schema.graphql
+  file: schema.graphql
 dataSources:
   - kind: ethereum
     name: uniswap
@@ -16,8 +16,8 @@ dataSources:
         - NewExchange
       abis:
         - name: uniswap
-          file: ./abis/uniswap.json
+          file: uniswap/abis/uniswap.json
       eventHandlers:
         - event: NewExchange(indexed address,indexed address)
           handler: handleNewExchange
-      file: ./src/mapping.ts
+      file: uniswap/uniswap.wasm
